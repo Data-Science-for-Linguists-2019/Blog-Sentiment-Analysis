@@ -1,6 +1,7 @@
 Blog Sentiment Analysis
 ===
 Created by Eva Bacas.
+
 About
 ---
 This is Eva's term project for Data Science. This project is an analysis of the sentiments and word frequencies in blogs, including variance across different author demographic groups.
