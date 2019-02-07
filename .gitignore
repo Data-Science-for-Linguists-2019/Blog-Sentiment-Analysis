@@ -1,0 +1,11 @@
+# I wasn't sure what to put in here so I just copied stuff over from one of our HW repos
+#------------------ Jupyter, R  
+.ipynb_checkpoints
+.Rproj.user
+#------------------ common OS config files
+.DS_Store
+.Spotlight-V100
+Thumbs.db
+desktop.ini
+#------------------ directories to ignore
+data/
