@@ -3,6 +3,8 @@ Project plan: Blog Sentiment Analysis
 Summary
 ---
 This project is an analysis of the sentiments and word frequencies in blogs, including variance across different author demographic groups.
+
+
 Data
 ---
 Dataset: The Blog Authorship Corpus
@@ -27,6 +29,8 @@ Categories: all blogs fall into three age groups, with an equal number of male a
 Language: English
 
 Format: .csv
+
+
 Analysis
 ---
 I intend to map words/phrases to sentiments, for example, "great" to happy, "looking forward to" to excited, as well as overall positive and negative sentiment. I will use these mapping to judge the overall sentiment of individual blogs, authors, and variance across demographic groups. I will check judgments and revise my mappings as I go.
