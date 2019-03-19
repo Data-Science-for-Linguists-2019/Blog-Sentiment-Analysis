@@ -17,3 +17,17 @@ __Data sharing plan:__
 The Blog Authorship Corpus's license states that it may be freely used for noncommercial purposes. From this, it seems that it would be okay for me to reupload the data onto Github. However, since there are 681,284 blog posts, that is maybe too much data for me to share with my classmates for this project. I created a smaller subset of the data, with 100 randomly selected blog posts.
 
 The subset is titled [`mini_data.csv`](https://github.com/Data-Science-for-Linguists-2019/Blog-Sentiment-Analysis/blob/master/data_samples/mini_data.csv), and can be found in the [`data_samples`](https://github.com/Data-Science-for-Linguists-2019/Blog-Sentiment-Analysis/tree/master/data_samples) folder of my project repo.
+
+Progress report #2
+---
+3/19/19
+
+I corrected some of my mistakes in my previous data exploration. In my Jupyter notebook file [`progress_report_part2.ipnyb`](https://github.com/Data-Science-for-Linguists-2019/Blog-Sentiment-Analysis/blob/master/progress_report_part2.ipynb), I continued looking at basic stats and created some more graphs. I began investigating word frequency by industry and topic clustering.
+
+__Data sharing plan:__
+
+I have decided since the Blog Authorship Corpus is freely available on the web, I will not repost it in its entirety. I will keep it to just the subset I posted.
+
+__License:__
+
+I picked GNU General Public License for my code, which allows people to modify and distribute my code as long as they disclose the source and continue to use the same license.
