@@ -14,4 +14,8 @@ J. Schler, M. Koppel, S. Argamon and J. Pennebaker (2006). Effects of Age and Ge
 
 Code
 ---
-This code is licensed under the GNU General Public License v3.0. 
+This code is licensed under the GNU General Public License v3.0.
+
+Guestbook
+---
+Please leave comments, suggestions, and questions in [my guestbook](https://github.com/Data-Science-for-Linguists-2019/Class-Plaza/blob/master/guestbooks/guestbook_eva.md).
