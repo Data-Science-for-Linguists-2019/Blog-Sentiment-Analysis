@@ -31,3 +31,11 @@ I have decided since the Blog Authorship Corpus is freely available on the web, 
 __License:__
 
 I picked GNU General Public License for my code, which allows people to modify and distribute my code as long as they disclose the source and continue to use the same license.
+
+Progress report #3
+---
+4/9/19
+
+In my first Jupyter notebook file [`progress_report_part3.ipnyb`](https://github.com/Data-Science-for-Linguists-2019/Blog-Sentiment-Analysis/blob/master/progress_report_part3.ipynb), I used VADER (Valence Aware Dictionary and sEntiment Reasoner) to explore sentiment in the Blog Authorship Corpus. I also created some data visualizations for sentiment using a smaller subset of the data. I then saved my dataframe and transferred my work over to R, where I tried out some data visualizations for the whole dataset and some stats things. I created a second Jupyter notebook file [`progress_report_part3b.ipnyb`](https://github.com/Data-Science-for-Linguists-2019/Blog-Sentiment-Analysis/blob/master/progress_report_part3b.ipynb) with an R kernel. I did not find any significant relationships between any of the demographic info and polarity, but it was still a worthwhile exploration.
+
+I am not planning on changing my data sharing plan. I will not push the CSV file with the polarity scores, since I think it is unnecessary. 
