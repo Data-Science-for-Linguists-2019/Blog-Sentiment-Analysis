@@ -11,3 +11,7 @@ Data
 This project will use the Blog Authorship Corpus.
 
 J. Schler, M. Koppel, S. Argamon and J. Pennebaker (2006). Effects of Age and Gender on Blogging in Proceedings of 2006 AAAI Spring Symposium on Computational Approaches for Analyzing Weblogs. URL: http://www.cs.biu.ac.il/~schlerj/schler_springsymp06.pdf
+
+Code
+---
+This code is licensed under the GNU General Public License v3.0. 
