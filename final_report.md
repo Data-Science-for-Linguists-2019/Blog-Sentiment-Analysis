@@ -7,7 +7,7 @@
   + 1.2 Goals of the project
   + 1.3 Process
 + [2. Data](#2-data)
-  + 2.1 The Blog Authorship Corpus
+  + [2.1 The Blog Authorship Corpus](#21-The-Blog-Authorship-Corpus)
   + 2.2 Reading and processing the data
   + 2.3 Overview of the corpus
 + [3. Analysis](#3-analysis)
@@ -35,7 +35,7 @@ When I was tokenizing the data for [the sentiment word frequency analysis](link 
 
 ## 2. Data
 
-### 2.1 About the Blog Authorship Corpus
+### 2.1 The Blog Authorship Corpus
 
 The Blog Authorship Corpus
 
