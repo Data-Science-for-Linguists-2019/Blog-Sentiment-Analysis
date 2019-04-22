@@ -43,6 +43,20 @@ The Blog Authorship Corpus
 
 ### 2.3 Overview of the Blog Authorship Corpus
 
+There are 19,320 bloggers total and
+
+![png](images/graphs/distribution_of_blogger_ages.png)
+*Description: This graph is a histogram of blogger ages. The ages range from 13 to 48, with no bloggers between the ages of 17 and 23 years old or 27 and 33 years old. The maximum value is at 17 years old. The graph is right skewed, meaning there are more younger bloggers than older bloggers.*
+
+![png](images/graphs/distribution_of_blogger_signs.png)
+*Description: This graph is a histogram of blogger astrological signs. The maximum value is the sign Virgo, though the distribution is fairly even. There are between 1400 and 1800 bloggers in every category.*
+
+![png](images/graphs/top_10_industries_blog.png)
+*Description: This graph is a histogram of the top 10 industries by number of blogs, excluding "Industry unknown". The maximum value is Student with over 150,000 blogs. The second greatest category is Technology, with around 40,000 blogs. The top 10 from greatest number of blogs to least is: Student, Technology, Arts, Education, Communications-Media, Internet, Non-Prpfot, Engineering, Law, and Publishing.*
+
+![png](images/graphs/top_10_industries_blogger.png)
+*Description: This graph is a histogram of the top 10 industries by number of bloggers, excluding "Industry unknown". The maximum value is Student with over 5000 blogs. This is over 25% of the total number of bloggers, 19320. There are slight differences between this graph and the graph of top 10 industries by number of blogs. Despite having more blogs total, there are less bloggers in the category Art than the subsequent category, Education.*
+
 **Graph time**
 
 ## 3. Analysis
