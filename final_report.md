@@ -3,21 +3,21 @@
 
 **Table of Contents:**
 + [1. Project overview](#1.-project-overview)
- + 1.1 Introduction
- + 1.2 Goals of the project
- + 1.3 Process
+  + 1.1 Introduction
+  + 1.2 Goals of the project
+  + 1.3 Process
 + [2. Data](#2.-data)
   + 2.1 The Blog Authorship Corpus
- + 2.2 Reading and processing the data
- + 2.3 Overview of the corpus
+  + 2.2 Reading and processing the data
+  + 2.3 Overview of the corpus
 + [3. Analysis](#3.-analysis)
- + 3.1 Word frequencies
- + 3.2 Topic modeling
- + 3.3 Sentiment analysis
+  + 3.1 Word frequencies
+  + 3.2 Topic modeling
+  + 3.3 Sentiment analysis
 + [4. Conclusions](#4-conclusions)
- + 4.1 What I learned
- + 4.2 Setbacks and difficulties
- + 4.3 If I could do it again...
+  + 4.1 What I learned
+  + 4.2 Setbacks and difficulties
+  + 4.3 If I could do it again...
 + [5. Works Cited](#5.-works-cited)
 
 
