@@ -1,5 +1,5 @@
 # Final report: Blog Sentiment Analysis
-**[Eva Bacas](https://github.com/vnbcs) | [LING 1340](https://naraehan.github.io/Data-Science-for-Linguists-2019/) | April 26, 2019**
+### **[Eva Bacas](https://github.com/vnbcs) | [LING 1340](https://naraehan.github.io/Data-Science-for-Linguists-2019/) | April 26, 2019**
 
 ### Table of Contents:
 + **[1. Project overview](#1-project-overview)**
