@@ -19,9 +19,6 @@
   + [4.2 If I could do it again...](#42-if-i-could-do-it-again)
 + **[5. Works Cited](#5-works-cited)**
 
-### List of figures:
-
-
 ## 1. Project overview
 
 ### 1.1 Introduction
