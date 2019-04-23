@@ -8,8 +8,13 @@
   + [1.3 Setbacks and difficulties](#12-setbacks-and-difficulties)
 + **[2. Data](#2-data)**
   + [2.1 The Blog Authorship Corpus](#21-The-Blog-Authorship-Corpus)
+    + [Figure 1: blogger.com in August 2004](#figure-1-bloggercom-in-August-2004)
   + [2.2 Reading and processing the data](#22-reading-and-processing-the-data)
   + [2.3 Overview of the corpus](#23-overview-of-the-corpus)
+    + Figure 2
+    + Figure 3
+    + Figure 4
+    + Figure 5
 + **[3. Analysis](#3-analysis)**
   + 3.1 Word frequencies
   + 3.2 Topic modeling
@@ -51,6 +56,7 @@ When I was tokenizing the data for [the sentiment word frequency analysis](link 
 
 [The Blog Authorship Corpus](http://u.cs.biu.ac.il/~koppel/BlogCorpus.htm) was published in 2006 by Schler, Koppel, Argamon and Pennebaker. The corpus is the collected posts of 19,320 bloggers gathered from blogger.com in August 2004.
 
+#### Figure 1: blogger.com in August 2004
 ![png](images/blogger_in_2004/blogger_create-blog_2004.png)
 *Description: This image is a screenshot of Google Blogger in August 2004. This image can be viewed on the Internet Archive [here](https://web.archive.org/web/20040804083743/http://www.blogger.com/start).*
 
