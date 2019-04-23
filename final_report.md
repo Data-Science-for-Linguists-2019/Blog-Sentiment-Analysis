@@ -29,7 +29,7 @@ In this project, I investigated different ways to extract linguistic information
 + How can I use machine learning to extract that information?
 + How can I show that information with data visualization?
 
-I found an interesting corpus, [the Blog Authorship Corpus](http://u.cs.biu.ac.il/~koppel/BlogCorpus.htm), made of Google Blogger blogs from 2004, and started exploring the data. In addition to the textual data, each blog contained demographic information related to the blogger, which provided a chance for me to explore the corpus through a sociolinguistic lens. Along the way, I developed more specific research questions to focus on for this project:
+I found an interesting corpus, [the Blog Authorship Corpus](http://u.cs.biu.ac.il/~koppel/BlogCorpus.htm), made up of Google Blogger blogs from 2004, and started exploring the data. In addition to the textual data, each blog contained demographic information related to the blogger, which provided a chance for me to explore the corpus through a sociolinguistic lens. Along the way, I developed more specific research questions to focus on for this project:
 
 + What are the most frequent words? How does word frequency vary between groups of bloggers?
 + What topics are found in these blogs?
@@ -51,27 +51,27 @@ When I was tokenizing the data for [the sentiment word frequency analysis](link 
 
 [The Blog Authorship Corpus](http://u.cs.biu.ac.il/~koppel/BlogCorpus.htm) was published in 2006 by Schler, Koppel, Argamon and Pennebaker. The corpus is the collected posts of 19,320 bloggers gathered from blogger.com in August 2004.
 
-#### Figure 1: blogger.com in August 2004
+#### blogger.com in August 2004
 ![png](images/blogger_in_2004/blogger_create-blog_2004.png)
 *Description: This image is a screenshot of Google Blogger in August 2004. This image can be viewed on the Internet Archive [here](https://web.archive.org/web/20040804083743/http://www.blogger.com/start).*
 
 ### 2.2 Reading and processing the data
 
-I found a [CSV version of this dataset on Kaggle](https://www.kaggle.com/rtatman/blog-authorship-corpus), posted by [Dr. Rachael Tatman](http://www.rctatman.com/). The original version of this corpus was made up of XML files, with each file containing all the blogs for a given blogger. While processing XML files would be a useful skill to learn, I didn't want to spend a lot of time on data cleanup if I didn't have to.
+I found a [CSV version of this dataset on Kaggle](https://www.kaggle.com/rtatman/blog-authorship-corpus), posted by [Dr. Rachael Tatman](http://www.rctatman.com/). The original version of this corpus was made up of XML files, with each file containing all the blogs for a given blogger. While processing XML files would be a useful skill to learn, I didn't want to spend a lot of time on data cleanup if I didn't have to. The original version contains 681,288 posts (according to the authors - I did not verify this). Dr. Tatman's cleaned up CSV file contains 681,284 blogs. This still seems like a very adequate amount of data, and since there are so many blogs I did not bother to investigate why 4 blogs were removed.
 
-I read the CSV in as a data frame and added columns for things like tokens, sentiment, and polarity score. I saved the modified data frame as a CSV as well. **put some links here**
+I read the CSV in as a data frame and added columns for things like [tokens, sentiment, and polarity score](https://nbviewer.jupyter.org/github/Data-Science-for-Linguists-2019/Blog-Sentiment-Analysis/blob/master/progress_report_part3.ipynb#Running-VADER-on-all-the-blogs). I saved the modified data frame as a new CSV file.
 
 ### 2.3 Overview of the corpus
 
-There are 19,320 bloggers total and 681,288 posts. For each blogger, the dataset provides their [gender](#gender), [age](#age), [industry](#industry), and [astrological sign](#astrological-sign).
+There are 19,320 bloggers total and 681,284 posts. The maximum number of posts per blogger is [4221 blogs](https://nbviewer.jupyter.org/github/Data-Science-for-Linguists-2019/Blog-Sentiment-Analysis/blob/master/progress_report1.ipynb#Basic-Stats). For each blogger, the dataset provides their [gender](#gender), [age](#age), [industry](#industry), and [astrological sign](#astrological-sign).
 
 #### Gender
 
-The gender breakdown is 50% female and 50% male.
+The gender breakdown is 50% female and 50% male. Clearly the authors must have controlled for this when collecting data. Gender does vary across industry, which I explored further in [Progress Report 2](https://nbviewer.jupyter.org/github/Data-Science-for-Linguists-2019/Blog-Sentiment-Analysis/blob/master/progress_report_part2.ipynb#Overview).
 
 #### Age
 
-To make a Google blogger account, bloggers be at least 13 years of age. The ages of the bloggers range from 13 to 48, with two strange gaps between 17 and 23 years old and 27 and 33 years old. [The mean age is ~23 years old](put a link here). Considering the authors controlled so well for blogger gender, this seems to be a weird oversight, especially for a dataset of this size.
+To make a Google blogger account, bloggers be at least 13 years of age. The ages of the bloggers range from 13 to 48, with two strange gaps between 17 and 23 years old and 27 and 33 years old. [The mean age is ~23 years old](https://nbviewer.jupyter.org/github/Data-Science-for-Linguists-2019/Blog-Sentiment-Analysis/blob/master/progress_report_part2.ipynb#Overview). Considering the authors controlled so well for blogger gender, this seems to be a weird oversight, especially for a dataset of this size.
 
 #### Distribution of blogger ages
 ![png](images/graphs/distribution_of_blogger_ages.png)
@@ -79,9 +79,7 @@ To make a Google blogger account, bloggers be at least 13 years of age. The ages
 
 #### Industry
 
-Industry refers to the self-identified industry or career field of the blogger. This category was not required in order to create a Google Blogger account. Bloggers who did not list their industry are labeled "indUnk" (= industry unknown). Industry unknown makes up over 50% of the dataset (**fact check this when ur notebooks load**).
-
-*If ur reading this before I finish none of my Jupyter notebooks are loading on my personal laptop, it's very fun*
+Industry refers to the self-identified industry or career field of the blogger. This category was not required in order to create a Google Blogger account. Bloggers who did not list their industry are labeled "indUnk" (= industry unknown). Industry unknown makes up [over 1/3 of the dataset](https://nbviewer.jupyter.org/github/Data-Science-for-Linguists-2019/Blog-Sentiment-Analysis/blob/master/progress_report_part2.ipynb#Overview).
 
 #### Top 10 industries by number of blogs
 ![png](images/graphs/top_10_industries_blog.png)
