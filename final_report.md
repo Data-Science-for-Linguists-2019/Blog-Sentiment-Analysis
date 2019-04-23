@@ -11,7 +11,7 @@
   + [2.2 Reading and processing the data](#22-reading-and-processing-the-data)
   + [2.3 Overview of the corpus](#23-overview-of-the-corpus)
 + **[3. Analysis](#3-analysis)**
-  + [3.1 Word frequencies](#31-word-frequencies)
+  + [3.1 Word frequency](#31-word-frequency)
   + [3.2 Topic modeling](#32-topic-modeling)
   + [3.3 Sentiment analysis](#33-sentiment-analysis)
 + **[4. Conclusions](#4-conclusions)**
