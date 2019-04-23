@@ -22,7 +22,7 @@ J. Schler, M. Koppel, S. Argamon and J. Pennebaker (2006). Effects of Age and Ge
   + Description of the dataset and my initial project plan
 + [`progress_report.md`](https://github.com/Data-Science-for-Linguists-2019/Blog-Sentiment-Analysis/blob/master/progress_report.md)
   + Project updates for each [progress report](#jupyter-notebook-files)
-+ [`Project_presentation.pdf`](https://github.com/Data-Science-for-Linguists-2019/Blog-Sentiment-Analysis/blob/master/Project_presentation.pdf) - [Click here to view on Google Slides](bit.ly/2IxJ8i1)
++ [`Project_presentation.pdf`](https://github.com/Data-Science-for-Linguists-2019/Blog-Sentiment-Analysis/blob/master/Project_presentation.pdf) - [Click here to view on Google Slides](https://bit.ly/2IxJ8i1)
   + PDF version of my final project presentation
 + [`final_report.md`](https://github.com/Data-Science-for-Linguists-2019/Blog-Sentiment-Analysis/blob/master/final_report.md)
   + In-depth explanation of the project, with background information and interpretation of the analysis
