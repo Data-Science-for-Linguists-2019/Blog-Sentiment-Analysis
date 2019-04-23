@@ -34,9 +34,9 @@ J. Schler, M. Koppel, S. Argamon and J. Pennebaker (2006). Effects of Age and Ge
 + [`progress_report_part2.ipynb`](https://github.com/Data-Science-for-Linguists-2019/Blog-Sentiment-Analysis/blob/master/progress_report_part2.ipynb) - [Click here to view on nbviewer](https://nbviewer.jupyter.org/github/Data-Science-for-Linguists-2019/Blog-Sentiment-Analysis/blob/master/progress_report_part2.ipynb)
   + In my second progress report, I continued exploring the data frame and corrected my issues from my first progress report. I began my analysis by looking at word frequencies and topic modeling.
 + [`progress_report_part3.ipynb`](https://github.com/Data-Science-for-Linguists-2019/Blog-Sentiment-Analysis/blob/master/progress_report_part3.ipynb) - [Click here to view on nbviewer](https://nbviewer.jupyter.org/github/Data-Science-for-Linguists-2019/Blog-Sentiment-Analysis/blob/master/progress_report_part3.ipynb)
-  + In my third progress report, I explored sentiment analysis using [VADER](https://github.com/cjhutto/vaderSentiment) (Valence Aware Dictionary and sEntiment Reasoner).
+  + In my third progress report, I explored sentiment analysis using [VADER](https://github.com/cjhutto/vaderSentiment) (Valence Aware Dictionary and sEntiment Reasoner). I categorized blogs as positive, negative, or neutral, and then investigated variation across blogger groups and most frequent words per sentiment category.
 + [`progress_report_part3b.ipynb`](https://github.com/Data-Science-for-Linguists-2019/Blog-Sentiment-Analysis/blob/master/progress_report_part3b.ipynb) - [Click here to view on nbviewer](https://nbviewer.jupyter.org/github/Data-Science-for-Linguists-2019/Blog-Sentiment-Analysis/blob/master/progress_report_part3b.ipynb)
-  + I attempted to create a mixed effects regression model using the demographic info as predictors and polarity score as an outcome. It didn't work and nothing was significant.
+  + This is a continuation of the third progress report. I switched to a new Jupyter notebook so I could use R. I attempted to create a mixed effects regression model using the demographic info as predictors and polarity score as an outcome.  It didn't work and nothing was significant.
 
 #### Folders:
 
