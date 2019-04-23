@@ -2,22 +2,22 @@
 **[Eva Bacas](https://github.com/vnbcs) | [LING 1340](https://naraehan.github.io/Data-Science-for-Linguists-2019/) | April 26, 2019**
 
 ### Table of Contents:
-+ [1. Project overview](#1-project-overview)
++ **[1. Project overview](#1-project-overview)**
   + [1.1 Introduction](#11-introduction)
   + [1.2 Process](#12-process)
   + [1.3 Setbacks and difficulties](#12-setbacks-and-difficulties)
-+ [2. Data](#2-data)
++ **[2. Data](#2-data)**
   + [2.1 The Blog Authorship Corpus](#21-The-Blog-Authorship-Corpus)
   + [2.2 Reading and processing the data](#22-reading-and-processing-the-data)
   + [2.3 Overview of the corpus](#23-overview-of-the-corpus)
-+ [3. Analysis](#3-analysis)
++ **[3. Analysis](#3-analysis)**
   + 3.1 Word frequencies
   + 3.2 Topic modeling
   + 3.3 Sentiment analysis
-+ [4. Conclusions](#4-conclusions)
++ **[4. Conclusions](#4-conclusions)**
   + 4.1 What I learned
   + 4.2 If I could do it again...
-+ [5. Works Cited](#5-works-cited)
++ **[5. Works Cited](#5-works-cited)**
 
 
 ## 1. Project overview
@@ -66,7 +66,7 @@ There are 19,320 bloggers total and 681,288 posts. For each blogger, the dataset
 
 #### Gender
 
-The gender breakdown is 50% female and 50% male. 
+The gender breakdown is 50% female and 50% male.
 
 #### Age
 
