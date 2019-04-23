@@ -11,13 +11,15 @@
   + [2.2 Reading and processing the data](#22-reading-and-processing-the-data)
   + [2.3 Overview of the corpus](#23-overview-of-the-corpus)
 + **[3. Analysis](#3-analysis)**
-  + 3.1 Word frequencies
-  + 3.2 Topic modeling
-  + 3.3 Sentiment analysis
+  + [3.1 Word frequencies](#31-word-frequencies)
+  + [3.2 Topic modeling](#32-topic-modeling)
+  + [3.3 Sentiment analysis](#33-sentiment-analysis)
 + **[4. Conclusions](#4-conclusions)**
-  + 4.1 What I learned
-  + 4.2 If I could do it again...
+  + [4.1 What I learned](#41-what-i-learned)
+  + [4.2 If I could do it again...](#42-if-i-could-do-it-again)
 + **[5. Works Cited](#5-works-cited)**
+
+### List of figures:
 
 
 ## 1. Project overview
@@ -101,13 +103,19 @@ I did not expect astrological signs to be a significant factor in any of my anal
 
 ### 3.1 Word frequency
 
+I first tokenized the whole dataset in [Progress Report 2](https://nbviewer.jupyter.org/github/Data-Science-for-Linguists-2019/Blog-Sentiment-Analysis/blob/master/progress_report_part2.ipynb#Methods), forgetting to exclude stop words and other frequent terms such as "nbsp" (non-breaking space) and "urlLink". I used these tokens to graph the [10 most frequent tokens by industry](https://nbviewer.jupyter.org/github/Data-Science-for-Linguists-2019/Blog-Sentiment-Analysis/blob/master/progress_report_part2.ipynb#Most-frequent-words-per-industry) for every industry, including industry unknown. Unfortunately, since I forgot to remove stop words, there was almost no variation between industries.
+
+I tokenized again for my sentiment analysis, lowercasing and removing stop words, "nbsp", and "urlLink". I found some interesting variation in word frequencies across sentiments. However, the most frequent words were still not particularly informative. In the future, I would like to use other methods of looking at most important words, which I discuss further in my [conclusion](#42-if-i-could-do-it-again).
+
 ### 3.2 Topic modeling
 
 ### 3.3 Sentiment analysis
 
 ## 4. Conclusions
 
-### 4.1 If I could do it again...
+### 4.1 What I learned
+
+### 4.2 If I could do it again...
 
 ## 5. Works Cited
 **Citations here**
