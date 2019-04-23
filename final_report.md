@@ -8,13 +8,8 @@
   + [1.3 Setbacks and difficulties](#12-setbacks-and-difficulties)
 + **[2. Data](#2-data)**
   + [2.1 The Blog Authorship Corpus](#21-The-Blog-Authorship-Corpus)
-    + [Figure 1: blogger.com in August 2004](#figure-1-bloggercom-in-August-2004)
   + [2.2 Reading and processing the data](#22-reading-and-processing-the-data)
   + [2.3 Overview of the corpus](#23-overview-of-the-corpus)
-    + Figure 2
-    + Figure 3
-    + Figure 4
-    + Figure 5
 + **[3. Analysis](#3-analysis)**
   + 3.1 Word frequencies
   + 3.2 Topic modeling
