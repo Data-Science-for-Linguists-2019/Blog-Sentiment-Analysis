@@ -36,11 +36,15 @@ I found an interesting corpus, [the Blog Authorship Corpus](http://u.cs.biu.ac.i
 
 ### 1.2 Process
 
-**Write stuff here**
+I read the data in as a data frame, and there was minimal clean up needed (see [2.2 Reading and processing the data](#22-reading-and-processing-the-data) for more details). I began compiling basic stats and data visualizations to look at the blogger demographics. Unfortunately, I first did this [by blog](https://nbviewer.jupyter.org/github/Data-Science-for-Linguists-2019/Blog-Sentiment-Analysis/blob/master/progress_report1.ipynb#Basic-Stats) and not by blogger. Since the number of blogs per blogger varies wildly, this is not a great way to look at demographics. I redid my basic stats by blogger in my [second progress report](https://nbviewer.jupyter.org/github/Data-Science-for-Linguists-2019/Blog-Sentiment-Analysis/blob/master/progress_report_part2.ipynb#Overview).
+
+Next, I began my analysis. I did [topic modeling](https://nbviewer.jupyter.org/github/Data-Science-for-Linguists-2019/Blog-Sentiment-Analysis/blob/master/progress_report_part2.ipynb#Data-analysis:-Topic-clustering) first, though word frequencies come first in the notebook. I found a pretty good tutorial using followed it almost exactly. I had some issues with word frequencies, which I will expand on in the following section. After that, I tried my hand at sentiment analysis. After consulting many different sentiment dictionaries, I decided to look for a pre-trained model since I just don't think I currently have the skill to create a sentiment model myself.
+
+After investigating sentiment and mapping polarity scores to the dataset, I attempted to create a mixed effects model to see if any of the demographic information were predictors for the polarity score. All data visualizations pointed to absolutely not, but I tried anyway, and it wasn't significant. I won't go into it too much since I didn't really know what I was doing, but I'm leaving [the notebook](https://nbviewer.jupyter.org/github/Data-Science-for-Linguists-2019/Blog-Sentiment-Analysis/blob/master/progress_report_part3b.ipynb) in for reference.
 
 ### 1.3 Setbacks and difficulties
 
-Luckily, I did not have many issues [reading in the data](#22-reading-and-processing-the-data). However, I had a couple big difficulties while I was analyzing the data. First, my dataset is really large, and it did not occur to me to use a smaller subset of the data. This meant basically every text-based process took forever. I wish I had tweaked my [topic model](put something here) a couple more times and gone back and tokenized with several different methods, but those processes just took so long. (Well, I actually did tokenize the whole dataset twice, but then I had another issue...)
+Luckily, I did not have many issues [reading in the data](#22-reading-and-processing-the-data). However, I had a couple big difficulties while I was analyzing the data. First, my dataset is really large, and it did not occur to me to use a smaller subset of the data. This meant basically every text-based process took forever. I wish I had tweaked my [topic model](https://nbviewer.jupyter.org/github/Data-Science-for-Linguists-2019/Blog-Sentiment-Analysis/blob/master/progress_report_part2.ipynb#Data-analysis:-Topic-clustering) a couple more times and gone back and tokenized with several different methods, but those processes just took so long. (Well, I actually did tokenize the whole dataset twice, but then I had another issue...)
 
 When I was tokenizing the data for [the sentiment word frequency analysis](https://nbviewer.jupyter.org/github/Data-Science-for-Linguists-2019/Blog-Sentiment-Analysis/blob/master/progress_report_part3.ipynb#Running-VADER-on-10k-blog-sample), I added the tokens as a column to my data frame where each row is a list of tokens. When I saved the data frame as a CSV, the list was put within another list, making the individual tokens inaccessible (at least, I couldn't figure out how access them). See [here](https://nbviewer.jupyter.org/github/Data-Science-for-Linguists-2019/Blog-Sentiment-Analysis/blob/master/images/making_nice_graphs.ipynb#Word-frequencies) for examples of this issue. I put off further word frequency analysis since I thought it would be easy to come back to, but because of this issue, I was not able to do as much with word frequency as I wanted to.
 
@@ -52,13 +56,15 @@ When I was tokenizing the data for [the sentiment word frequency analysis](https
 
 #### blogger.com in August 2004
 ![png](images/blogger_in_2004/blogger_create-blog_2004.png)
-*Description: This image is a screenshot of Google Blogger in August 2004. This image can be viewed on the Internet Archive [here](https://web.archive.org/web/20040804083743/http://www.blogger.com/start).*
+*Description: This image is a screenshot of Google Blogger in August 2004. The archived version of this page can be viewed on the Internet Archive [here](https://web.archive.org/web/20040804083743/http://www.blogger.com/start).*
 
 ### 2.2 Reading and processing the data
 
 I found a [CSV version of this dataset on Kaggle](https://www.kaggle.com/rtatman/blog-authorship-corpus), posted by [Dr. Rachael Tatman](http://www.rctatman.com/). The original version of this corpus was made up of XML files, with each file containing all the blogs for a given blogger. While processing XML files would be a useful skill to learn, I didn't want to spend a lot of time on data cleanup if I didn't have to. The original version contains 681,288 posts (according to the authors - I did not verify this). Dr. Tatman's cleaned up CSV file contains 681,284 blogs. This still seems like a very adequate amount of data, and since there are so many blogs I did not bother to investigate why 4 blogs were removed.
 
 I read the CSV in as a data frame and added columns for things like [tokens, sentiment, and polarity score](https://nbviewer.jupyter.org/github/Data-Science-for-Linguists-2019/Blog-Sentiment-Analysis/blob/master/progress_report_part3.ipynb#Running-VADER-on-all-the-blogs). I saved the modified data frame as a new CSV file.
+
+I now realize that I probably should have done more to clean up the data and reduce it down to just data that would be good for the task at hand. See [4.2 If I could do it again...](#42-if-i-could-do-it-again) for more on this.
 
 ### 2.3 Overview of the corpus
 
@@ -82,7 +88,7 @@ Industry refers to the self-identified industry or career field of the blogger. 
 
 #### Top 10 industries by number of blogs
 ![png](images/graphs/top_10_industries_blog.png)
-*Description: This graph is a bar chart of the top 10 industries by number of blogs, excluding "industry unknown". The maximum value is Student with over 150,000 blogs. The second greatest category is Technology, with around 40,000 blogs. The top 10 from greatest number of blogs to least is: Student, Technology, Arts, Education, Communications-Media, Internet, Non-Prpfot, Engineering, Law, and Publishing.*
+*Description: This graph is a bar chart of the top 10 industries by number of blogs, excluding "industry unknown". The maximum value is Student with over 150,000 blogs. The second greatest category is Technology, with around 40,000 blogs. The top 10 from greatest number of blogs to least is: Student, Technology, Arts, Education, Communications-Media, Internet, Non-Profit, Engineering, Law, and Publishing.*
 
 #### Top 10 industries by number of bloggers
 ![png](images/graphs/top_10_industries_blogger.png)
@@ -104,6 +110,22 @@ I first tokenized the whole dataset in [Progress Report 2](https://nbviewer.jupy
 
 I tokenized again for my sentiment analysis, lowercasing and removing stop words, "nbsp", and "urlLink". I found some interesting variation in word frequencies across sentiments using [a sample of 10000 blogs](https://nbviewer.jupyter.org/github/Data-Science-for-Linguists-2019/Blog-Sentiment-Analysis/blob/master/progress_report_part3.ipynb#Running-VADER-on-10k-blog-sample). However, the most frequent words were still not particularly informative. In the future, I would like to use other methods of looking at most important words, which I discuss further in my [conclusion](#42-if-i-could-do-it-again).
 
+(Because of the word frequency issue, these graphs are screenshots. Please view the graphs [here](https://nbviewer.jupyter.org/github/Data-Science-for-Linguists-2019/Blog-Sentiment-Analysis/blob/master/progress_report_part3.ipynb#Running-VADER-on-10k-blog-sample).)
+
+#### Top 10 most frequent words for negative
+![png](images/graphs/top 10 most frequent words_negative.png)
+*Description: This graph is a bar chart of the top 10 most frequent words for negative sentiment blogs. From most to least frequent: "like", "one", "get", "know", "people", "time", "would", "go", "really", "think".*
+
+#### Top 10 most frequent words for positive
+![png](images/graphs/top 10 most frequent words_positive.png)
+*Description: This graph is a bar chart of the top 10 most frequent words for positive sentiment blogs. From most to least frequent: "like", "one", "get", "time", "know", "really", "well", "go", "good", "think".*
+
+#### Top 10 most frequent words for neutral
+![png](images/graphs/top 10 most frequent words_neutral.png)
+*Description: This graph is a bar chart of the top 10 most frequent words for neutral sentiment blogs. From most to least frequent: "like", "one", "get", "know", "time", "go", "really", "would", "got", "think".*
+
+"Good" and "well" only show up in the top 10 for positive blogs, which makes sense. "People" only shows up for negative blogs. Many of the other words are similar.
+
 ### 3.2 Topic modeling
 
 ### 3.3 Sentiment analysis
@@ -113,6 +135,7 @@ I tokenized again for my sentiment analysis, lowercasing and removing stop words
 ### 4.1 What I learned
 
 ### 4.2 If I could do it again...
+In retrospect, I really wish I had cut down the amount of data into something workable. I didn't even try to cut out [blogs with non-English text](lhttps://nbviewer.jupyter.org/github/Data-Science-for-Linguists-2019/Blog-Sentiment-Analysis/blob/master/progress_report_part2.ipynb#Second-try:-Translating-non-English-blogs*-and-reducing-the-number-of-topics) since I thought I would be getting rid of potentially important data. If I did this again, I would only include blogs with in a specific range of word counts (maybe 200-400?), make more of an effort to cut out non-English blogs, and attempt
 
 ## 5. Works Cited
 **Citations here**
