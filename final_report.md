@@ -65,7 +65,7 @@ I found a [CSV version of this dataset on Kaggle](https://www.kaggle.com/rtatman
 
 I read the CSV in as a data frame and added columns for things like [tokens, sentiment, and polarity score](https://nbviewer.jupyter.org/github/Data-Science-for-Linguists-2019/Blog-Sentiment-Analysis/blob/master/progress_report_part3.ipynb#Running-VADER-on-all-the-blogs). I saved the modified data frame as a new CSV file.
 
-I now realize that I probably should have done more to clean up the data and reduce it down to just data that would be good for the task at hand. See [4.2 If I could do it again...](#42-if-i-could-do-it-again) for more on this.
+I now realize that I probably should have done more to clean up the data and reduce it down to just data that would be good for the tasks at hand. See [4.2 If I could do it again...](#42-if-i-could-do-it-again) for more on this.
 
 ### 2.3 Overview of the corpus
 
@@ -77,7 +77,7 @@ The gender breakdown is 50% female and 50% male. Clearly the authors must have c
 
 #### Age
 
-To make a Google blogger account, bloggers must be at least 13 years of age. The ages of the bloggers range from 13 to 48, with two strange gaps between 17 and 23 years old and 27 and 33 years old. [The mean age is ~23 years old](https://nbviewer.jupyter.org/github/Data-Science-for-Linguists-2019/Blog-Sentiment-Analysis/blob/master/progress_report_part2.ipynb#Overview). Considering the authors controlled so well for blogger gender, this seems to be a weird oversight, especially for a dataset of this size.
+To make a Google blogger account, bloggers must be at least 13 years of age. [The mean blogger age is ~23 years old](https://nbviewer.jupyter.org/github/Data-Science-for-Linguists-2019/Blog-Sentiment-Analysis/blob/master/progress_report_part2.ipynb#Overview), and the ages of the bloggers range from 13 to 48, with two strange gaps between 17 and 23 years old and 27 and 33 years old. Considering the authors controlled so well for blogger gender, this seems to be a weird oversight, especially for a dataset of this size.
 
 #### Distribution of blogger ages
 
