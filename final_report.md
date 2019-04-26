@@ -110,13 +110,11 @@ I first tokenized the whole dataset in [Progress Report 2](https://nbviewer.jupy
 
 I tokenized again for my sentiment analysis, lowercasing and removing stop words, "nbsp", and "urlLink". I found some interesting variation in word frequencies across sentiments using [a sample of 10000 blogs](https://nbviewer.jupyter.org/github/Data-Science-for-Linguists-2019/Blog-Sentiment-Analysis/blob/master/progress_report_part3.ipynb#Running-VADER-on-10k-blog-sample). However, the most frequent words were still not particularly informative. In the future, I would like to use other methods of looking at most important words, which I discuss further in my [conclusion](#42-if-i-could-do-it-again).
 
-(Because of the word frequency issue, these graphs are screenshots. Please view the graphs [here](https://nbviewer.jupyter.org/github/Data-Science-for-Linguists-2019/Blog-Sentiment-Analysis/blob/master/progress_report_part3.ipynb#Running-VADER-on-10k-blog-sample).)
+(Because of the word frequency issue, these graphs are screenshots. I'm sorry about the resolution. Please view the graphs [here](https://nbviewer.jupyter.org/github/Data-Science-for-Linguists-2019/Blog-Sentiment-Analysis/blob/master/progress_report_part3.ipynb#Running-VADER-on-10k-blog-sample).)
 
 #### Top 10 most frequent words for negative
-<img src="images/graphs/top%2010%20most%20frequent%20words_negative.png" width="200"/>
 ![png](images/graphs/top%2010%20most%20frequent%20words_negative.png)
 *Description: This graph is a bar chart of the top 10 most frequent words for negative sentiment blogs. From most to least frequent: "like", "one", "get", "know", "people", "time", "would", "go", "really", "think".*
-</img>
 
 #### Top 10 most frequent words for positive
 ![png](images/graphs/top%2010%20most%20frequent%20words_positive.png)
