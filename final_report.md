@@ -117,7 +117,7 @@ I tokenized again for my sentiment analysis, lowercasing and removing stop words
 *Description: This graph is a bar chart of the top 10 most frequent words for negative sentiment blogs. From most to least frequent: "like", "one", "get", "know", "people", "time", "would", "go", "really", "think".*
 
 #### Top 10 most frequent words for positive
-![png](images/graphs/top 10 most frequent words_positive.png)
+![png](images/graphs/top\ 10\ most\ frequent\ words_positive.png)
 *Description: This graph is a bar chart of the top 10 most frequent words for positive sentiment blogs. From most to least frequent: "like", "one", "get", "time", "know", "really", "well", "go", "good", "think".*
 
 #### Top 10 most frequent words for neutral
@@ -127,6 +127,10 @@ I tokenized again for my sentiment analysis, lowercasing and removing stop words
 "Good" and "well" only show up in the top 10 for positive blogs, which makes sense. "People" only shows up for negative blogs. Many of the other words are similar.
 
 ### 3.2 Topic modeling
+
+To group the blogs into topics, I used [Latent Dirichlet Allocation (LDA) with scikit-learn](https://nbviewer.jupyter.org/github/Data-Science-for-Linguists-2019/Blog-Sentiment-Analysis/blob/master/progress_report_part2.ipynb#Data-analysis:-Topic-clustering). I first removed punctuation, lowercased, and vectorized the blogs with TF-IDF.
+
+
 
 ### 3.3 Sentiment analysis
 
