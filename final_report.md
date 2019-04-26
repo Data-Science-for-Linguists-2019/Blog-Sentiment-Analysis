@@ -113,15 +113,17 @@ I tokenized again for my sentiment analysis, lowercasing and removing stop words
 (Because of the word frequency issue, these graphs are screenshots. Please view the graphs [here](https://nbviewer.jupyter.org/github/Data-Science-for-Linguists-2019/Blog-Sentiment-Analysis/blob/master/progress_report_part3.ipynb#Running-VADER-on-10k-blog-sample).)
 
 #### Top 10 most frequent words for negative
+<img src="images/graphs/top%2010%20most%20frequent%20words_negative.png" width="200"/>
 ![png](images/graphs/top%2010%20most%20frequent%20words_negative.png)
 *Description: This graph is a bar chart of the top 10 most frequent words for negative sentiment blogs. From most to least frequent: "like", "one", "get", "know", "people", "time", "would", "go", "really", "think".*
+</img>
 
 #### Top 10 most frequent words for positive
-![png](images/graphs/top 10 most frequent words_positive.png)
+![png](images/graphs/top%2010%20most%20frequent%20words_positive.png)
 *Description: This graph is a bar chart of the top 10 most frequent words for positive sentiment blogs. From most to least frequent: "like", "one", "get", "time", "know", "really", "well", "go", "good", "think".*
 
 #### Top 10 most frequent words for neutral
-![png](images/graphs/top 10 most frequent words_neutral.png)
+![png](images/graphs/top%2010%20most%20frequent%20words_neutral.png)
 *Description: This graph is a bar chart of the top 10 most frequent words for neutral sentiment blogs. From most to least frequent: "like", "one", "get", "know", "time", "go", "really", "would", "got", "think".*
 
 "Good" and "well" only show up in the top 10 for positive blogs, which makes sense. "People" only shows up for negative blogs. Many of the other words are similar.
