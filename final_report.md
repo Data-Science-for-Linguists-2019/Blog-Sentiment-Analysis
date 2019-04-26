@@ -172,7 +172,7 @@ VADER definitely has a positive skew, classifying many texts as positive that I 
 ![png](images/graphs/polarity_score_distribution.png)
 *Description: This graph is a histogram of polarity scores by number of blogs. The scores range from -1 to 1. There is a small peak near -1, a very large peak at 1, and a medium peak near 0.*
 
-The polarity scores have a really interesting peak at 0, which I concluded is because there are some really short blogs that have basically no words or ngrams in VADER's lexicon. Refer to [my project presentation]((https://github.com/Data-Science-for-Linguists-2019/Blog-Sentiment-Analysis/blob/master/Project_presentation.pdf) for examples.
+The polarity scores have a really interesting peak at 0, which I concluded is because there are some really short blogs that have basically no words or ngrams in VADER's lexicon. Refer to [my project presentation](https://github.com/Data-Science-for-Linguists-2019/Blog-Sentiment-Analysis/blob/master/Project_presentation.pdf) for examples.
 
 #### Variation in polarity score across demographic groups
 
