@@ -158,7 +158,7 @@ The first 3 keys in this dictionary break down how much of the text was classifi
 + positive = 0.5 or greater
 + neutral = between -0.5 and 0.5
 
-Looking over the data by hand, it seemed that VADER's sentiment classification was not the best... but it was also not the worst. There are a variety of examples in [my project presentation]((https://github.com/Data-Science-for-Linguists-2019/Blog-Sentiment-Analysis/blob/master/Project_presentation.pdf). After giving VADER a try with a sample of the data, I decided it was OK enough to use on the whole dataset.
+Looking over the data by hand, it seemed that VADER's sentiment classification was not the best... but it was also not the worst. There are a variety of examples in [my project presentation](https://github.com/Data-Science-for-Linguists-2019/Blog-Sentiment-Analysis/blob/master/Project_presentation.pdf). After giving VADER a try with a sample of the data, I decided it was OK enough to use on the whole dataset.
 
 #### Distibution of sentiment
 
