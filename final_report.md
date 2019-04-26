@@ -28,7 +28,7 @@ In this project, I investigated different ways to extract linguistic information
 + How can I use machine learning to extract that information?
 + How can I show that information with data visualization?
 
-I found an interesting corpus, [the Blog Authorship Corpus](http://u.cs.biu.ac.il/~koppel/BlogCorpus.htm)<sup>1(#1)</sup>, made up of Google Blogger blogs from 2004, and started exploring the data. In addition to the textual data, each blog contained demographic information related to the blogger, which provided a chance for me to explore the corpus through a sociolinguistic lens. Along the way, I developed more specific research questions to focus on for this project:
+I found an interesting corpus, [the Blog Authorship Corpus](http://u.cs.biu.ac.il/~koppel/BlogCorpus.htm)<sup id="a1">[1](#f1)</sup>, made up of Google Blogger blogs from 2004, and started exploring the data. In addition to the textual data, each blog contained demographic information related to the blogger, which provided a chance for me to explore the corpus through a sociolinguistic lens. Along the way, I developed more specific research questions to focus on for this project:
 
 + What are the most frequent words? How does word frequency vary between groups of bloggers?
 + What topics are found in these blogs?
@@ -144,7 +144,7 @@ For my second try, I found [20 topics with the 3 most informative words for each
 
 ### 3.3 Sentiment analysis
 
-For my sentiment analysis, I used VADER (Valence Aware Dictionary and sEntiment Reasoner), "a lexicon and rule-based sentiment analysis tool that is specifically attuned to sentiments expressed in social media" [^2]. VADER is also part of NLTK. From previous experience with NLTK functions, I suspected this would take a very long time (and it did). I first tried VADER on a [sample of 10,000 blogs](https://nbviewer.jupyter.org/github/Data-Science-for-Linguists-2019/Blog-Sentiment-Analysis/blob/master/progress_report_part3.ipynb#First-try:-VADER).
+For my sentiment analysis, I used VADER (Valence Aware Dictionary and sEntiment Reasoner), "a lexicon and rule-based sentiment analysis tool that is specifically attuned to sentiments expressed in social media" <sup id="a2">[2](#f2)</sup>. VADER is also part of NLTK. From previous experience with NLTK functions, I suspected this would take a very long time (and it did). I first tried VADER on a [sample of 10,000 blogs](https://nbviewer.jupyter.org/github/Data-Science-for-Linguists-2019/Blog-Sentiment-Analysis/blob/master/progress_report_part3.ipynb#First-try:-VADER).
 
 VADER returns polarity scores for a given text. The output is in the form of a dictionary.
 
@@ -208,6 +208,6 @@ I think a potentially more productive place of analysis would be looking at only
 
 ## 5. Works Cited
 
-<a name="1">1</a>: J. Schler, M. Koppel, S. Argamon and J. Pennebaker (2006). Effects of Age and Gender on Blogging in Proceedings of 2006 AAAI Spring Symposium on Computational Approaches for Analyzing Weblogs. URL: http://www.cs.biu.ac.il/~schlerj/schler_springsymp06.pdf
+<b id="f1">1:</b> J. Schler, M. Koppel, S. Argamon and J. Pennebaker (2006). Effects of Age and Gender on Blogging in Proceedings of 2006 AAAI Spring Symposium on Computational Approaches for Analyzing Weblogs. URL: http://www.cs.biu.ac.il/~schlerj/schler_springsymp06.pdf [↩](#a1)
 
-[^2]: Hutto, C.J. & Gilbert, E.E. (2014). VADER: A Parsimonious Rule-based Model for Sentiment Analysis of Social Media Text. Eighth International Conference on Weblogs and Social Media (ICWSM-14). Ann Arbor, MI, June 2014.
+<b id="f2">2:</b> Hutto, C.J. & Gilbert, E.E. (2014). VADER: A Parsimonious Rule-based Model for Sentiment Analysis of Social Media Text. Eighth International Conference on Weblogs and Social Media (ICWSM-14). Ann Arbor, MI, June 2014. [↩](#a2)
