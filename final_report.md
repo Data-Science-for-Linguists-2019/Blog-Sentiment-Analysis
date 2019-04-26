@@ -28,7 +28,7 @@ In this project, I investigated different ways to extract linguistic information
 + How can I use machine learning to extract that information?
 + How can I show that information with data visualization?
 
-I found an interesting corpus, [the Blog Authorship Corpus](http://u.cs.biu.ac.il/~koppel/BlogCorpus.htm)[<sup>1(#1)</sup>], made up of Google Blogger blogs from 2004, and started exploring the data. In addition to the textual data, each blog contained demographic information related to the blogger, which provided a chance for me to explore the corpus through a sociolinguistic lens. Along the way, I developed more specific research questions to focus on for this project:
+I found an interesting corpus, [the Blog Authorship Corpus](http://u.cs.biu.ac.il/~koppel/BlogCorpus.htm)<sup>1(#1)</sup>, made up of Google Blogger blogs from 2004, and started exploring the data. In addition to the textual data, each blog contained demographic information related to the blogger, which provided a chance for me to explore the corpus through a sociolinguistic lens. Along the way, I developed more specific research questions to focus on for this project:
 
 + What are the most frequent words? How does word frequency vary between groups of bloggers?
 + What topics are found in these blogs?
